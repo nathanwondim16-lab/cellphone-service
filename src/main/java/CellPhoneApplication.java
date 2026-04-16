@@ -52,7 +52,7 @@ public class CellPhoneApplication {
 
         // Generating customer's information
         for(int i = 0; i < 100; i++) {
-            System.out.print("\rGenerating customer report " + i + "███▒▒▒▒▒▒▒");
+            System.out.print("\rGenerating customer report " + i + "% ███▒▒▒▒▒▒▒");
             Thread.sleep(35);
         }
         System.out.println("\rDone\n");
@@ -77,12 +77,12 @@ public class CellPhoneApplication {
     public static void display(CellPhone phone) {
         System.out.println();
         System.out.println(phone.getOwner() + "'s information: ");
-        System.out.println("----------------------------------------------");
+        System.out.println("<---------------------------------------------->");
         System.out.println("Serial number: " + phone.getSerialNumber());
         System.out.println("Phone Model: " + phone.getModel());
         System.out.println("Carrier: " + phone.getCarrier());
         System.out.println("Phone number: " + phone.getPhoneNumber());
         System.out.println("Owner: " + phone.getOwner());
-        System.out.println("----------------------------------------------");
+        System.out.println("<---------------------------------------------->");
     }
 }
